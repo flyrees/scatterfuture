@@ -28,6 +28,8 @@ jobs:
           cache: npm
 
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true # 仓库没开 Pages 时自动启用（Source 设为 GitHub Actions）
 
       - name: Resolve base path
         # 默认部署在 https://<user>.github.io/<repo>/ ，base 必须带仓库名。
