@@ -28,9 +28,9 @@ export default defineConfig({
     siteTitle: '散点未来',
 
     nav: [
-      { text: '首页', link: '/' },
-      { text: '隐私政策', link: '/privacy', activeMatch: '/privacy' },
-      { text: '使用条款', link: '/terms', activeMatch: '/terms' }
+      { text: '首页 / Home', link: '/' },
+      { text: '隐私政策 / Privacy Policy', link: '/privacy', activeMatch: '/privacy' },
+      { text: '使用条款 / Terms of Use', link: '/terms', activeMatch: '/terms' }
     ],
 
     outline: { level: [2, 3], label: '本页目录' },
