@@ -131,6 +131,11 @@ html[lang^='en'] .VPNavBarTranslations .button .text::before {
   padding-bottom: 6px;
 }
 
+/* 分区下的子项缩进，体现归属关系 */
+.VPSidebarItem.level-0 > .items {
+  padding-left: 16px;
+}
+
 .VPSidebarItem.level-1 > .item .text {
   font-size: 15px;
   line-height: 1.6;
