@@ -1,8 +1,6 @@
 /**
- * 参考 flyrees.github.io（Hexo NexT · Pisces）的视觉语言：
- *   浅冷灰底 #f5f7f9 + 白色内容卡片 + 橙色主色 #fc6423
- *   字体 Lato / PingFang SC，正文 #555，行高 2
- * 只搬了配色和排版，没有搬布局。
+ * 视觉：浅冷灰底 #f5f7f9 + 白色内容卡片 + 散点未来蓝 #4f7bf2
+ * 字体 Lato / PingFang SC，正文 #555，行高 2
  */
 
 :root {
@@ -12,11 +10,11 @@
   --vp-font-family-mono: 'SF Mono', Menlo, Consolas, 'PingFang SC', monospace;
 
   /* 品牌色：brand-1 用于文字链接（比原色深一点，保证白底上的对比度），
-     brand-3 用于按钮实底，保留原版那个橙 */
-  --vp-c-brand-1: #c0480f;
-  --vp-c-brand-2: #a83d0b;
-  --vp-c-brand-3: #fc6423;
-  --vp-c-brand-soft: rgba(252, 100, 35, 0.14);
+     brand-3 用于按钮实底，与 App 图标一致 */
+  --vp-c-brand-1: #2557c9;
+  --vp-c-brand-2: #1f4bb0;
+  --vp-c-brand-3: #4f7bf2;
+  --vp-c-brand-soft: rgba(79, 123, 242, 0.14);
 
   /* 背景与文字 */
   --vp-c-bg: #f5f7f9;
@@ -37,16 +35,16 @@
   --vp-sidebar-bg-color: #ffffff;
 
   /* 代码 */
-  --vp-code-color: #b8440d;
-  --vp-code-bg: rgba(252, 100, 35, 0.09);
+  --vp-code-color: #2f5bd0;
+  --vp-code-bg: rgba(79, 123, 242, 0.09);
   --vp-code-block-bg: #f6f7f9;
 
   /* 按钮 */
   --vp-button-brand-border: transparent;
   --vp-button-brand-text: #ffffff;
-  --vp-button-brand-bg: #fc6423;
-  --vp-button-brand-hover-bg: #e2541a;
-  --vp-button-brand-active-bg: #c0480f;
+  --vp-button-brand-bg: #4f7bf2;
+  --vp-button-brand-hover-bg: #3f6ae0;
+  --vp-button-brand-active-bg: #2557c9;
 }
 
 .dark {
@@ -63,16 +61,16 @@
   --vp-c-border: #2a2e36;
   --vp-c-gutter: #2a2e36;
 
-  --vp-c-brand-1: #ff9466;
-  --vp-c-brand-2: #ffab85;
-  --vp-c-brand-3: #fc6423;
+  --vp-c-brand-1: #8fabff;
+  --vp-c-brand-2: #a9bdff;
+  --vp-c-brand-3: #4f7bf2;
 
   --vp-nav-bg-color: rgba(22, 24, 29, 0.86);
   --vp-sidebar-bg-color: #16181d;
 
   --vp-code-block-bg: #1b1e24;
-  --vp-code-color: #ff9466;
-  --vp-code-bg: rgba(252, 100, 35, 0.16);
+  --vp-code-color: #8fabff;
+  --vp-code-bg: rgba(79, 123, 242, 0.16);
 }
 
 /* ---------- 正文：白色卡片 + 行高 2 ---------- */
