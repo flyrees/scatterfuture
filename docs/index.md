@@ -1,18 +1,16 @@
 ---
-layout: home
-
-hero:
-  name: 散点未来
-  text: 隐私政策与使用条款
-  tagline: 掌控开支，开启理财第一步。
-  image:
-    src: /logo.png
-    alt: 散点未来
-  actions:
-    - theme: brand
-      text: 隐私政策
-      link: /privacy
-    - theme: alt
-      text: 使用条款
-      link: /terms
+layout: doc
 ---
+
+# 散点未来
+
+掌控开支，开启理财第一步。
+
+这里提供散点未来的隐私政策与使用条款，方便你随时查阅。
+
+## 法律条款
+
+- [隐私政策](/privacy)
+  了解我们会处理哪些信息、为什么处理，以及你对自己的数据拥有哪些权利。
+- [使用条款](/terms)
+  使用散点未来的服务规则，包括会员订阅、退款与免责说明。

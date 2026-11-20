@@ -1,18 +1,16 @@
 ---
-layout: home
-
-hero:
-  name: Scatter Future
-  text: Privacy Policy & Terms of Use
-  tagline: Control your spending — the first step to financial wellness.
-  image:
-    src: /logo.png
-    alt: Scatter Future
-  actions:
-    - theme: brand
-      text: Privacy Policy
-      link: /en/privacy
-    - theme: alt
-      text: Terms of Use
-      link: /en/terms
+layout: doc
 ---
+
+# Scatter Future
+
+Control your spending — the first step to financial wellness.
+
+This site provides the Privacy Policy and Terms of Use for Scatter Future, available whenever you need them.
+
+## Legal
+
+- [Privacy Policy](/en/privacy)
+  Learn what information we handle, why we handle it, and what rights you have over your data.
+- [Terms of Use](/en/terms)
+  The rules for using Scatter Future, including membership subscriptions, refunds, and disclaimers.

@@ -20,14 +20,52 @@ export default defineConfig({
       label: '简体中文',
       lang: 'zh-CN',
       title: '散点未来',
-      description: '散点未来隐私政策与使用条款'
+      description: '散点未来隐私政策与使用条款',
+      themeConfig: {
+        siteTitle: '散点未来',
+        sidebar: [
+          {
+            text: '法律条款',
+            items: [
+              { text: '隐私政策', link: '/privacy' },
+              { text: '使用条款', link: '/terms' }
+            ]
+          }
+        ],
+        returnToTopLabel: '回到顶部',
+        sidebarMenuLabel: '菜单',
+        langMenuLabel: '切换语言',
+        darkModeSwitchLabel: '外观',
+        lightModeSwitchTitle: '切换到浅色模式',
+        darkModeSwitchTitle: '切换到深色模式',
+        lastUpdated: { text: '最后更新于', formatOptions: { dateStyle: 'medium' } }
+      }
     },
     en: {
       label: 'English',
       lang: 'en-US',
       title: 'Scatter Future',
       description: 'Scatter Future Privacy Policy and Terms of Use',
-      link: '/en/'
+      link: '/en/',
+      themeConfig: {
+        siteTitle: 'Scatter Future',
+        sidebar: [
+          {
+            text: 'Legal',
+            items: [
+              { text: 'Privacy Policy', link: '/en/privacy' },
+              { text: 'Terms of Use', link: '/en/terms' }
+            ]
+          }
+        ],
+        returnToTopLabel: 'Return to top',
+        sidebarMenuLabel: 'Menu',
+        langMenuLabel: 'Change language',
+        darkModeSwitchLabel: 'Appearance',
+        lightModeSwitchTitle: 'Switch to light theme',
+        darkModeSwitchTitle: 'Switch to dark theme',
+        lastUpdated: { text: 'Last updated', formatOptions: { dateStyle: 'medium' } }
+      }
     }
   },
 
@@ -42,42 +80,6 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/logo.png',
-
-    locales: {
-      root: {
-        label: '简体中文',
-        siteTitle: '散点未来',
-
-        nav: [
-          { text: '首页', link: '/' },
-          { text: '隐私政策', link: '/privacy', activeMatch: '/privacy' },
-          { text: '使用条款', link: '/terms', activeMatch: '/terms' }
-        ],
-
-        outline: { level: [2, 3], label: '本页目录' },
-        returnToTopLabel: '回到顶部',
-        darkModeSwitchLabel: '外观',
-        lightModeSwitchTitle: '切换到浅色模式',
-        darkModeSwitchTitle: '切换到深色模式',
-        lastUpdated: { text: '最后更新于', formatOptions: { dateStyle: 'medium' } }
-      },
-      en: {
-        label: 'English',
-        siteTitle: 'Scatter Future',
-
-        nav: [
-          { text: 'Home', link: '/en/' },
-          { text: 'Privacy Policy', link: '/en/privacy', activeMatch: '/en/privacy' },
-          { text: 'Terms of Use', link: '/en/terms', activeMatch: '/en/terms' }
-        ],
-
-        outline: { level: [2, 3], label: 'On this page' },
-        returnToTopLabel: 'Return to top',
-        darkModeSwitchLabel: 'Appearance',
-        lightModeSwitchTitle: 'Switch to light theme',
-        darkModeSwitchTitle: 'Switch to dark theme',
-        lastUpdated: { text: 'Last updated', formatOptions: { dateStyle: 'medium' } }
-      }
-    }
+    outline: false
   }
 })
