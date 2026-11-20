@@ -1,0 +1,231 @@
+/**
+ * 参考 flyrees.github.io（Hexo NexT · Pisces）的视觉语言：
+ *   浅冷灰底 #f5f7f9 + 白色内容卡片 + 橙色主色 #fc6423
+ *   字体 Lato / PingFang SC，正文 #555，行高 2
+ * 只搬了配色和排版，没有搬布局。
+ */
+
+:root {
+  /* 字体 */
+  --vp-font-family-base: 'Lato', -apple-system, BlinkMacSystemFont, 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --vp-font-family-mono: 'SF Mono', Menlo, Consolas, 'PingFang SC', monospace;
+
+  /* 品牌色：brand-1 用于文字链接（比原色深一点，保证白底上的对比度），
+     brand-3 用于按钮实底，保留原版那个橙 */
+  --vp-c-brand-1: #c0480f;
+  --vp-c-brand-2: #a83d0b;
+  --vp-c-brand-3: #fc6423;
+  --vp-c-brand-soft: rgba(252, 100, 35, 0.14);
+
+  /* 背景与文字 */
+  --vp-c-bg: #f5f7f9;
+  --vp-c-bg-alt: #f5f7f9;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-soft: #eef1f4;
+
+  --vp-c-text-1: #2b2b2b;
+  --vp-c-text-2: #555555;
+  --vp-c-text-3: #8a94a6;
+
+  --vp-c-divider: #e8eaee;
+  --vp-c-border: #e8eaee;
+  --vp-c-gutter: #e8eaee;
+
+  /* 导航与侧栏 */
+  --vp-nav-bg-color: rgba(255, 255, 255, 0.86);
+  --vp-sidebar-bg-color: #ffffff;
+
+  /* 代码 */
+  --vp-code-color: #b8440d;
+  --vp-code-bg: rgba(252, 100, 35, 0.09);
+  --vp-code-block-bg: #f6f7f9;
+
+  /* 按钮 */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: #fc6423;
+  --vp-button-brand-hover-bg: #e2541a;
+  --vp-button-brand-active-bg: #c0480f;
+}
+
+.dark {
+  --vp-c-bg: #16181d;
+  --vp-c-bg-alt: #16181d;
+  --vp-c-bg-elv: #1d2027;
+  --vp-c-bg-soft: #23272f;
+
+  --vp-c-text-1: #e6e8eb;
+  --vp-c-text-2: #a8b0bd;
+  --vp-c-text-3: #6f7a8a;
+
+  --vp-c-divider: #2a2e36;
+  --vp-c-border: #2a2e36;
+  --vp-c-gutter: #2a2e36;
+
+  --vp-c-brand-1: #ff9466;
+  --vp-c-brand-2: #ffab85;
+  --vp-c-brand-3: #fc6423;
+
+  --vp-nav-bg-color: rgba(22, 24, 29, 0.86);
+  --vp-sidebar-bg-color: #16181d;
+
+  --vp-code-block-bg: #1b1e24;
+  --vp-code-color: #ff9466;
+  --vp-code-bg: rgba(252, 100, 35, 0.16);
+}
+
+/* ---------- 正文：白色卡片 + 行高 2 ---------- */
+
+.VPDoc .content-container {
+  margin-top: 8px;
+  padding: 36px 44px 48px;
+  background: var(--vp-c-bg-elv);
+  border-radius: 12px;
+  box-shadow:
+    0 1px 2px rgba(20, 30, 50, 0.03),
+    0 10px 30px rgba(20, 30, 50, 0.05);
+}
+
+.dark .VPDoc .content-container {
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.2),
+    0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 639px) {
+  .VPDoc .content-container {
+    margin: 0;
+    padding: 16px 20px 32px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .vp-doc table {
+    font-size: 14px;
+  }
+
+  .vp-doc th,
+  .vp-doc td {
+    padding: 6px 10px;
+  }
+}
+
+.vp-doc p,
+.vp-doc li {
+  line-height: 1.95;
+}
+
+/* NexT 的标题没有分隔线，靠留白分层 */
+.vp-doc h1 {
+  font-size: 26px;
+  letter-spacing: 0;
+}
+
+.vp-doc h2 {
+  margin: 44px 0 16px;
+  padding-top: 0;
+  border-top: none;
+  font-size: 21px;
+  letter-spacing: 0;
+}
+
+.vp-doc h3 {
+  margin: 32px 0 8px;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.vp-doc h2:hover .header-anchor,
+.vp-doc h3:hover .header-anchor {
+  color: var(--vp-c-brand-1);
+}
+
+/* 正文链接：无下划线，hover 出下划线 */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-3);
+  border-bottom-color: currentColor;
+}
+
+.vp-doc a.header-anchor {
+  border-bottom: none;
+  font-weight: 400;
+}
+
+/* 表格：横线风格，和 NexT 一致 */
+.vp-doc th {
+  background: var(--vp-c-bg-soft);
+  font-weight: 600;
+}
+
+.vp-doc tr:nth-child(2n) {
+  background: transparent;
+}
+
+.vp-doc div[class*='language-'] {
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+/* ---------- 导航栏与侧栏 ---------- */
+
+.VPNavBar:not(.home) {
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.VPNavBar.has-sidebar .content {
+  background: transparent;
+}
+
+.VPSidebar {
+  border-right: 1px solid var(--vp-c-divider);
+}
+
+.VPSidebarItem.level-1.is-active > .item .text {
+  font-weight: 600;
+}
+
+/* 首页 hero 按钮 */
+.VPButton.brand {
+  border-color: transparent;
+}
+
+/* 首页特性卡片：白底，浮在灰色页面上
+   （用 .VPFeatures 提高优先级，覆盖默认主题的 background-color） */
+.VPFeatures .VPFeature {
+  background: var(--vp-c-bg-elv);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  box-shadow:
+    0 1px 2px rgba(20, 30, 50, 0.03),
+    0 8px 24px rgba(20, 30, 50, 0.04);
+}
+
+.VPFeatures .VPFeature .icon {
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
+
+/* 首页 hero 标题：中文不做逐字换行 */
+.VPHero .name,
+.VPHero .text {
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .VPHero .name,
+  .VPHero .text {
+    white-space: normal;
+  }
+}
