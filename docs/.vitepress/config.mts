@@ -25,7 +25,7 @@ export default defineConfig({
         siteTitle: '散点未来',
         sidebar: [
           {
-            text: '法律条款',
+            text: '📄 法律条款',
             items: [
               { text: '隐私政策', link: '/privacy' },
               { text: '使用条款', link: '/terms' }
@@ -51,7 +51,7 @@ export default defineConfig({
         siteTitle: 'Scatter Future',
         sidebar: [
           {
-            text: 'Legal',
+            text: '📄 Legal',
             items: [
               { text: 'Privacy Policy', link: '/en/privacy' },
               { text: 'Terms of Use', link: '/en/terms' }

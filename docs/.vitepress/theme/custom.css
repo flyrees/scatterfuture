@@ -122,9 +122,13 @@ html[lang^='en'] .VPNavBarTranslations .button .text::before {
 }
 
 .VPSidebarItem.level-0 > .item .text {
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 600;
-  color: var(--vp-c-text-3);
+  color: var(--vp-c-text-1);
+}
+
+.VPSidebarItem.level-0 {
+  padding-bottom: 6px;
 }
 
 .VPSidebarItem.level-1 > .item .text {
@@ -158,6 +162,15 @@ html[lang^='en'] .VPNavBarTranslations .button .text::before {
 
 .vp-doc h1 + p {
   font-size: 17px;
+  color: var(--vp-c-text-2);
+}
+
+/* 首页标题正下方的标语 */
+.vp-doc .hero-subtitle {
+  margin: 4px 0 20px;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
   color: var(--vp-c-text-2);
 }
 
