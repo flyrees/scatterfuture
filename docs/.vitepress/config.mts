@@ -32,6 +32,25 @@ export default defineConfig({
             ]
           }
         ],
+        search: {
+          provider: 'local',
+          options: {
+            translations: {
+              button: { buttonText: '搜索', buttonAriaLabel: '搜索' },
+              modal: {
+                displayDetails: '显示全部结果',
+                resetButtonTitle: '清除搜索',
+                backButtonTitle: '返回搜索',
+                noResultsText: '没有找到相关内容',
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换',
+                  closeText: '关闭'
+                }
+              }
+            }
+          }
+        },
         returnToTopLabel: '回到顶部',
         sidebarMenuLabel: '菜单',
         langMenuLabel: '切换语言',
@@ -58,6 +77,25 @@ export default defineConfig({
             ]
           }
         ],
+        search: {
+          provider: 'local',
+          options: {
+            translations: {
+              button: { buttonText: 'Search', buttonAriaLabel: 'Search' },
+              modal: {
+                displayDetails: 'Display all results',
+                resetButtonTitle: 'Reset search',
+                backButtonTitle: 'Back to search',
+                noResultsText: 'No results found',
+                footer: {
+                  selectText: 'select',
+                  navigateText: 'navigate',
+                  closeText: 'close'
+                }
+              }
+            }
+          }
+        },
         returnToTopLabel: 'Return to top',
         sidebarMenuLabel: 'Menu',
         langMenuLabel: 'Change language',
@@ -81,6 +119,8 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.png',
     aside: false,
-    outline: false
+    outline: false,
+    // 构建标记只读取根级 themeConfig，语言各自的中文/英文文案在 locales 里配置
+    search: { provider: 'local' }
   }
 })

@@ -95,6 +95,34 @@
   border-radius: 7px;
 }
 
+/* ---------- 顶部搜索 ---------- */
+
+@media (min-width: 768px) {
+  .VPNavBarSearch {
+    justify-content: flex-end;
+  }
+
+  #local-search {
+    width: 280px;
+  }
+
+  .VPNavBarSearch .DocSearch-Button {
+    padding: 0 10px 0 14px;
+    border: 1px solid var(--vp-c-border);
+    border-radius: 999px;
+    background: var(--vp-c-bg);
+  }
+
+  .VPNavBarSearch .DocSearch-Button:hover {
+    border-color: var(--vp-c-brand-1);
+    background: var(--vp-c-bg);
+  }
+
+  .VPNavBarSearch .DocSearch-Button .DocSearch-Button-Container {
+    flex-grow: 1;
+  }
+}
+
 /* 语言切换：显示当前语言名称，只保留一个下拉箭头 */
 .VPNavBarTranslations .option-icon {
   display: none;
