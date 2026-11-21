@@ -1,4 +1,4 @@
-# Scatter Future Terms of Use
+# Scatter Future User Agreement
 
 - Last updated: November 20, 2026
 - Effective date: November 20, 2026

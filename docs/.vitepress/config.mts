@@ -7,7 +7,7 @@ const base = process.env.BASE_PATH || '/'
 export default defineConfig({
   lang: 'zh-CN',
   title: '散点未来',
-  description: '散点未来隐私政策与使用条款',
+  description: '散点未来隐私政策与用户协议',
 
   base,
   cleanUrls: true,       // 生成 /privacy 而不是 /privacy.html
@@ -20,7 +20,7 @@ export default defineConfig({
       label: '简体中文',
       lang: 'zh-CN',
       title: '散点未来',
-      description: '散点未来隐私政策与使用条款',
+      description: '散点未来隐私政策与用户协议',
       themeConfig: {
         siteTitle: '散点未来',
         sidebar: [
@@ -28,7 +28,7 @@ export default defineConfig({
             text: '📄 法律条款',
             items: [
               { text: '隐私政策', link: '/privacy' },
-              { text: '使用条款', link: '/terms' }
+              { text: '用户协议', link: '/terms' }
             ]
           }
         ],
@@ -45,7 +45,7 @@ export default defineConfig({
       label: 'English',
       lang: 'en-US',
       title: 'Scatter Future',
-      description: 'Scatter Future Privacy Policy and Terms of Use',
+      description: 'Scatter Future Privacy Policy and User Agreement',
       link: '/en/',
       themeConfig: {
         siteTitle: 'Scatter Future',
@@ -54,7 +54,7 @@ export default defineConfig({
             text: '📄 Legal',
             items: [
               { text: 'Privacy Policy', link: '/en/privacy' },
-              { text: 'Terms of Use', link: '/en/terms' }
+              { text: 'User Agreement', link: '/en/terms' }
             ]
           }
         ],
@@ -74,7 +74,7 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#4F7BF2' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: '散点未来 · Scatter Future' }],
-    ['meta', { property: 'og:description', content: '散点未来隐私政策与使用条款 · Privacy Policy & Terms of Use' }],
+    ['meta', { property: 'og:description', content: '散点未来隐私政策与用户协议 · Privacy Policy & User Agreement' }],
     ['meta', { property: 'og:image', content: `${base}logo.png` }]
   ],
 

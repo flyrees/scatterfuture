@@ -1,9 +1,9 @@
-# 散点未来 · 隐私政策与使用条款
+# 散点未来 · 隐私政策与用户协议
 
 用 [VitePress](https://vitepress.dev) 搭建的静态站点，承载散点未来 App 的：
 
 - 隐私政策（`/privacy`）
-- 使用条款（`/terms`）
+- 用户协议（`/terms`）
 
 线上地址：<https://flyrees.github.io/scatterfuture/>
 
@@ -27,7 +27,7 @@ docs/
 ├── public/logo.png          # 散点未来 logo（App 图标）
 ├── index.md                 # 首页
 ├── privacy.md               # 隐私政策
-└── terms.md                 # 使用条款
+└── terms.md                 # 用户协议
 .github/workflows/deploy.yml # 推送 main 自动部署到 Pages
 ```
 
@@ -36,7 +36,7 @@ docs/
 | 想改什么 | 改哪里 |
 | --- | --- |
 | 隐私政策 | `docs/privacy.md` |
-| 使用条款 | `docs/terms.md` |
+| 用户协议 | `docs/terms.md` |
 | 站点标题、描述 | `docs/.vitepress/config.mts` 里的 `title` / `description` |
 | 顶部导航 | `config.mts` 的 `nav` |
 | Logo / 图标 | 替换 `docs/public/logo.png`（同时是网页图标） |
@@ -63,5 +63,5 @@ docs/
 
 ## 注意
 
-- App 内的“隐私政策”“使用条款”直接打开本站在线页面，修改文案后 App 无需发版。
+- App 内的“隐私政策”“用户协议”直接打开本站在线页面，修改文案后 App 无需发版。
 - 隐私政策内容要与 App 实际收集的信息、第三方服务保持一致。
