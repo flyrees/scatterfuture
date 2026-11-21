@@ -148,26 +148,83 @@ html[lang^='en'] .VPNavBarTranslations .button .text::before {
 
 /* ---------- 正文 ---------- */
 
+/* 收紧顶部留白，标题紧跟导航栏 */
+.VPDoc.has-sidebar.has-sidebar {
+  padding-top: 20px;
+}
+
 .VPDoc .content-container {
-  max-width: 780px;
+  max-width: 768px;
   margin: 0 auto;
-  padding: 56px 32px 96px;
+  padding: 8px 40px 96px;
   background: transparent;
   border-radius: 0;
   box-shadow: none;
 }
 
-.vp-doc h1 {
-  font-size: 32px;
+#app .VPDoc.has-aside .content-container {
+  max-width: 744px;
+}
+
+/* 文档头部：栏目、标题、日期 */
+.vp-doc .legal-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px;
+  font-size: 12px;
   font-weight: 700;
-  line-height: 1.35;
-  letter-spacing: 0;
-  margin-bottom: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--vp-c-brand-1);
+}
+
+.vp-doc .legal-kicker::before {
+  content: '';
+  width: 22px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+}
+
+.vp-doc h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.24;
+  letter-spacing: -0.01em;
 }
 
 .vp-doc h1 + p {
   font-size: 17px;
   color: var(--vp-c-text-2);
+}
+
+.vp-doc .legal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin: 20px 0 0;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc .legal-meta span {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  background: var(--vp-c-bg-soft);
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc .legal-meta b {
+  font-weight: 500;
+  color: var(--vp-c-text-3);
 }
 
 /* 首页标题正下方的标语 */
@@ -180,12 +237,19 @@ html[lang^='en'] .VPNavBarTranslations .button .text::before {
 }
 
 .vp-doc h2 {
-  margin: 52px 0 18px;
+  margin: 36px 0 14px;
+  padding: 26px 0 0;
+  border-top: 1px solid var(--vp-c-divider);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.vp-doc h2:first-of-type {
+  margin-top: 34px;
   padding-top: 0;
   border-top: none;
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: 0;
 }
 
 .vp-doc h3 {
@@ -198,8 +262,12 @@ html[lang^='en'] .VPNavBarTranslations .button .text::before {
 .vp-doc p,
 .vp-doc li {
   font-size: 16px;
-  line-height: 1.95;
+  line-height: 1.9;
   color: var(--vp-c-text-1);
+}
+
+.vp-doc li::marker {
+  color: var(--vp-c-text-3);
 }
 
 .vp-doc p {
@@ -260,19 +328,56 @@ html[lang^='en'] .VPNavBarTranslations .button .text::before {
   display: none;
 }
 
+/* ---------- 右侧页内目录 ---------- */
+
+.VPDocAsideOutline .content .outline-title {
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--vp-c-text-3);
+}
+
+.VPDocAsideOutline .content .outline-link {
+  padding: 4px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: normal;
+  overflow: visible;
+}
+
+.VPDocAsideOutline .content .outline-link.active {
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
 /* ---------- 移动端 ---------- */
 
 @media (max-width: 639px) {
   .VPDoc .content-container {
-    padding: 28px 20px 72px;
+    padding: 8px 20px 72px;
   }
 
   .vp-doc h1 {
-    font-size: 28px;
+    font-size: 29px;
+  }
+
+  .vp-doc .legal-kicker {
+    margin-bottom: 12px;
+  }
+
+  .vp-doc .legal-meta {
+    margin-top: 16px;
+    padding-bottom: 22px;
   }
 
   .vp-doc h2 {
-    font-size: 20px;
-    margin-top: 40px;
+    font-size: 19px;
+    margin-top: 28px;
+    padding-top: 22px;
+  }
+
+  .vp-doc h2:first-of-type {
+    margin-top: 28px;
   }
 }
