@@ -159,9 +159,9 @@ html[lang^='en'] .VPNavBarTranslations .button .text::before {
   padding-bottom: 6px;
 }
 
-/* 分区下的子项缩进，体现归属关系 */
+/* 分区下的子项与分区标题文字对齐 */
 .VPSidebarItem.level-0 > .items {
-  padding-left: 16px;
+  padding-left: 24px;
 }
 
 .VPSidebarItem.level-1 > .item .text {
@@ -178,7 +178,7 @@ html[lang^='en'] .VPNavBarTranslations .button .text::before {
 #app .VPSidebarItem.level-1.is-active > .item > .indicator {
   top: 50%;
   bottom: auto;
-  left: -17px;
+  left: -9px;
   width: 3px;
   height: 16px;
   border-radius: 999px;
