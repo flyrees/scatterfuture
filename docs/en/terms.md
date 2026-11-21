@@ -1,11 +1,11 @@
-<div class="legal-kicker">Legal</div>
-
 # Scatter Future User Agreement
 
-<div class="legal-meta">
-  <span><b>Last updated</b>November 20, 2026</span>
-  <span><b>Effective date</b>November 20, 2026</span>
-</div>
+---
+
+- Last updated: November 20, 2026
+- Effective date: November 20, 2026
+
+---
 
 ## 1. Acceptance of Terms
 

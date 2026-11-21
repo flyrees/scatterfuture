@@ -1,6 +1,5 @@
 ---
 layout: doc
-aside: false
 ---
 
 # Scatter Future

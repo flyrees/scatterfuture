@@ -32,7 +32,6 @@ export default defineConfig({
             ]
           }
         ],
-        outline: { level: [2], label: '本页目录' },
         returnToTopLabel: '回到顶部',
         sidebarMenuLabel: '菜单',
         langMenuLabel: '切换语言',
@@ -59,7 +58,6 @@ export default defineConfig({
             ]
           }
         ],
-        outline: { level: [2], label: 'On this page' },
         returnToTopLabel: 'Return to top',
         sidebarMenuLabel: 'Menu',
         langMenuLabel: 'Change language',
@@ -81,6 +79,8 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: '/logo.png'
+    logo: '/logo.png',
+    aside: false,
+    outline: false
   }
 })
