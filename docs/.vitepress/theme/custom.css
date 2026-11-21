@@ -159,9 +159,9 @@ html[lang^='en'] .VPNavBarTranslations .button .text::before {
   padding-bottom: 6px;
 }
 
-/* 分区下的子项与分区标题文字对齐 */
+/* 分区下的子项缩进，体现归属关系 */
 .VPSidebarItem.level-0 > .items {
-  padding-left: 24px;
+  padding-left: 16px;
 }
 
 .VPSidebarItem.level-1 > .item .text {
@@ -174,16 +174,26 @@ html[lang^='en'] .VPNavBarTranslations .button .text::before {
   font-weight: 600;
 }
 
-/* 当前项左侧竖线标识（复用主题内置的 indicator） */
-#app .VPSidebarItem.level-1.is-active > .item > .indicator {
-  top: 50%;
-  bottom: auto;
-  left: -9px;
+/* 当前项左侧竖线：用一个统一的滑条，切换时平滑移动 */
+.VPSidebar .nav {
+  position: relative;
+}
+
+.pf-sidebar-indicator {
+  position: absolute;
+  left: 7px;
   width: 3px;
   height: 16px;
   border-radius: 999px;
   background-color: var(--vp-c-brand-1);
-  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: top 0.28s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s;
+}
+
+/* 隐藏主题默认的每项指示条 */
+#app .VPSidebarItem .item > .indicator {
+  display: none;
 }
 
 /* ---------- 正文 ---------- */
